@@ -9,6 +9,7 @@ def delete_dot(text):
         if text[-1] == '.':
             text = text[:-1]
     return text
+
 def check_condition(new_id):
     # 1단계
     new_id = new_id.lower()
@@ -36,7 +37,7 @@ def check_condition(new_id):
         while(len(new_id) < 3):
             new_id += new_id[-1]
 
-return new_id
+    return new_id
 
 
 def main():
@@ -56,9 +57,9 @@ def main():
         
         else:
             break
-new_id = check_condition(new_id)
+    new_id = check_condition(new_id)
 
-print(new_id)
+    print(new_id)
 
 
 main()
